@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Dewi Siti Jamilah</title>
+    
+    <meta name="google" content="notranslate">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJzL3cBA1g5l5sK4S+jM1r0T5/k4Z3zGqM3+i/f1mN1Gf3VzM8gC+C2XF+yT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Portofolio.</div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li> 
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li> 
+                <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="content">
+            <p>Hello, I am</p>
+            
+            <h1 id="name-role-text"></h1>
+            
+            <h2 class="role" style="display: none;">AI Engineer | Automation Engineer | Data Analyst</h2> 
+
+            <p class="description">
+                Mechatronics and Artificial Intelligence students with a focus on developing intelligent systems based on data, automation, and machine learning for innovative and sustainable technology solutions.
+            </p>
+            
+            <div class="social-links">
+                <a href="https://linkedin.com/in/dewisitijamilah" target="_blank" class="social-icon">
+                    <img src="in.jpg" alt="LinkedIn" class="social-img">
+                </a>
+                <a href="https://github.com/dewisiti28" target="_blank" class="social-icon">
+                    <img src="git.png" alt="GitHub" class="social-img">
+                </a>
+            </div>
+
+            <div class="buttons">
+                <a href="https://drive.google.com/file/d/1mIaqX5pabfxHMR3HZkeWmsiNUB6lIKVA/view?usp=sharing" target="_blank" class="btn btn-cv">Download CV</a>
+                <a href="#contact" class="btn btn-contact">Contact Me</a>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="real.png" alt="Dewi Siti Jamilah" class="profile-pic">
+        </div>
+    </section>
+    
+    <section class="about" id="about">
+        
+        <div class="about-content fade-in">
+            <h2 class="section-title">About <strong>Me</strong></h2>
+            <p class="role-text">AI Engineer | Automation Engineer | Data Analyst</p>
+            <p class="about-description">
+                I am a bachelor's degree student in Mechatronics and Artificial Intelligence at the Indonesian University of Education with a strong interest in developing intelligent systems engineering-based solutions that integrate mechanics, electronics, informatics, and artificial intelligence. I am experienced in conducting problem-solving systems analysis and data processing to support decision-making and optimize system performance.
+            </p>
+            <p class="about-description">
+                I possess leadership skills in human resource management and data-driven performance evaluation. I am technically proficient in Python, Java, and SQL programming, with a basic understanding of machine learning, and experience in IoT, PLC, K3, pneumatic, and hydraulic systems. I am adaptable to new technologies, able to address technical challenges, and committed to developing innovative, effective, and applicable digital solutions.
+            </p> 
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="section-title fade-in">My <strong>Skills</strong></h2>
+        
+        <div class="skills-container">
+            
+            <div class="skill-card">
+                <div class="icon-box">
+                    <img src="1.png" alt="Programming and Data Icon" class="skill-icon-img">
+                </div>
+                <h3>Programming and Data</h3>
+                <p>Skilled in Java, Python, SQL, machine learning, data analysis, and data visualization using tools such as pandas and matplotlib.</p>
+                <button class="btn-read-more" onclick="openModal('Programming and Data')">Read More</button>
+            </div>
+            
+            <div class="skill-card">
+                <div class="icon-box">
+                    <img src="2.png" alt="Engineering and Control Icon" class="skill-icon-img">
+                </div>
+                <h3>Engineering and Control</h3>
+                <p>Experienced with Programmable Logic Controllers (PLC), Internet of Things (IoT), safety engineering (K3), automation systems, pneumatics, and hydraulics.</p>
+                <button class="btn-read-more" onclick="openModal('Engineering and Control')">Read More</button>
+            </div>
+            
+            <div class="skill-card">
+                <div class="icon-box">
+                    <img src="3.png" alt="Web and Design Icon" class="skill-icon-img">
+                </div>
+                <h3>Web and Design</h3>
+                <p>Able to build and structure web interfaces using HTML and style them efficiently with CSS. Possesses a basic but solid understanding of UI/UX design principles to ensure aesthetic and user-friendly digital solutions.</p>
+                <button class="btn-read-more" onclick="openModal('Web and Design')">Read More</button> 
+            </div>
+            
+        </div>
+    </section>
+    
+    <section class="portofolio" id="portofolio">
+        <h2 class="section-title fade-in">My <strong>Portofolio</strong></h2>
+        
+        <div class="portofolio-container">
+            
+            <div class="portofolio-card fade-in">
+                <img src="p1.jpg" alt="Project 1 Image" class="project-image">
+                <div class="card-content">
+                    <h3>HIROWASTE</h3>
+                    <p class="long-desc">Hirowaste adalah desain UI/UX untuk aplikasi jual-beli sampah daur ulang. Aplikasi ini menghubungkan Pengguna dan Driver penjemput sampah, di mana sampah daur ulang dihargai dan dibeli.</p>
+                </div>
+            </div>
+
+            <div class="portofolio-card fade-in">
+                <img src="p2.jpg"Project 2 Image" class="project-image">
+                <div class="card-content">
+                    <h3>FARMINISTA</h3>
+                    <p class="long-desc">Farminista adalah aplikasi administrasi pertanian yang membantu petani mengelola dan mencatat stok (bibit, panen, dan buah) serta mengelola data pemasok.</p>
+                </div>
+            </div>
+
+            <div class="portofolio-card fade-in">
+                <img src="p3.jpg" alt="Project 3 Image" class="project-image">
+                <div class="card-content">
+                    <h3>DIAGNOSA KECANDUAN GAME ONLINE</h3>
+                    <p class="long-desc">Sistem pakar untuk mendiagnosa tingkat kecanduan game online menggunakan metode Certainty Factor (CF) dan Rule Base.</p>
+                </div>
+            </div>
+
+            <div class="portofolio-card fade-in">
+                <img src="p4.jpg" alt="Project 4 Image" class="project-image">
+                <div class="card-content">
+                    <h3>PENGUMUMAN PANITIA MOKA-KU UPI PURWAKARTA 2025</h3>
+                    <p class="long-desc">Aplikasi resmi Penyampaian Informasi dan Pengumuman Panitia MOKAKU UPI Purwakarta 2025.</p>
+                </div>
+            </div>
+
+            <div class="portofolio-card fade-in">
+                <img src="p5.jpg" alt="Project 5 Image" class="project-image">
+                <div class="card-content">
+                    <h3>AI UNTUK MELIHAT RAM, MERAPIHKAN DAN MELIHAT UKURAN FOLDER</h3>
+                    <p class="long-desc">AI Agent ini berfungsi sebagai asisten terminal yang dapat diperintah menggunakan bahasa alami (NLP) untuk melakukan tugas-tugas pengelolaan dan diagnostik sistem komputer (RAM dan File).</p>
+                </div>
+            </div>
+
+            <div class="portofolio-card fade-in">
+                <img src="p6.jpg" alt="Project 6 Image" class="project-image">
+                <div class="card-content">
+                    <h3>RUANGKU</h3>
+                    <p class="long-desc">Aplikasi ini merupakan sistem administrasi pengelolaan peminjaman ruangan dan inventaris (barang). Sistem ini memiliki tiga fitur pengguna utama: Admin, Manajer, dan Operator.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+    <div class="contact-box">
+        <h2 class="section-title contact-title fade-in">Contact <strong>Me</strong></h2>
+        
+        <div class="contact-links-container">
+            
+            <a href="https://linkedin.com/in/dewisitijamilah" target="_blank" class="contact-link-item fade-in">
+                <img src="c1.jpg" alt="LinkedIn" class="contact-img">
+                <p>LinkedIn</p>
+            </a>
+            
+            <a href="mailto:dewisitijamilah@upi.edu" class="contact-link-item fade-in"> 
+                <img src="c2.jpg" alt="Email" class="contact-img">
+                <p>Email</p>
+            </a>
+            
+            <a href="https://wa.me/+6285759079606" target="_blank" class="contact-link-item fade-in">
+                <img src="c3.jpg" alt="WhatsApp" class="contact-img">
+                <p>WhatsApp</p>
+            </a>
+            
+            <a href="https://github.com/dewisiti28" target="_blank" class="contact-link-item fade-in">
+                <img src="c4.jpg" alt="Github" class="contact-img">
+                <p>Github</p>
+            </a>
+            
+        </div>
+        
+    </div>
+</section>
+    <div id="programming-data-modal" class="skill-modal">
+        <div class="modal-content">
+            <h2 class="modal-title">Programming and Data</h2>
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            
+            <div class="progress-bar-container">
+                
+                <div class="skill-item">
+                    <span class="skill-name">Java</span>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar" style="width: 90%;" data-level="90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <span class="skill-name">Python</span>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar" style="width: 85%;" data-level="85%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">SQL</span>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar" style="width: 70%;" data-level="70%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">Machine Learning</span>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar" style="width: 85%;" data-level="85%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">Data Analysis</span>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar" style="width: 90%;" data-level="90%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">Visualization (pandas, matplotlib)</span>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar" style="width: 90%;" data-level="90%"></div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    <div id="engineering-control-modal" class="skill-modal">
+        <div class="modal-content">
+            <h2 class="modal-title">Engineering and Control</h2> 
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            
+            <div class="progress-bar-container">
+                
+                <div class="skill-item">
+                    <span class="skill-name">Programmable Logic Control (PLC)</span>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar" style="width: 90%;" data-level="90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <span class="skill-name">Automation</span>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar" style="width: 80%;" data-level="80%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">Pneumatics</span>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar" style="width: 90%;" data-level="90%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">Hydraulics</span>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar" style="width: 90%;" data-level="90%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">Internet of Things (IoT)</span>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar" style="width: 85%;" data-level="85%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">Occupational Health and Safety</span>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar" style="width: 90%;" data-level="90%"></div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="web-design-modal" class="skill-modal">
+        <div class="modal-content">
+            <h2 class="modal-title">Web and Design</h2> 
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            
+            <div class="progress-bar-container">
+                
+                <div class="skill-item">
+                    <span class="skill-name">HTML</span>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar" style="width: 85%;" data-level="85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <span class="skill-name">CSS</span>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar" style="width: 85%;" data-level="85%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">UI/UX Design</span>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar" style="width: 90%;" data-level="90%"></div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script>
+        // KODE TYPING EFFECT (TETAP SAMA)
+        const textElement = document.getElementById('name-role-text');
+        
+        const texts = [
+            "Dewi Siti Jamilah", 
+            "AI Engineer", 
+            "Automation Engineer", 
+            "Data Analyst",
+        ];
+        
+        let textIndex = 0;
+        let charIndex = 0;
+        const typingSpeed = 100; 
+        const delayBetweenTexts = 3000; 
+
+        function typeWriter() {
+            const currentText = texts[textIndex];
+
+            if (charIndex < currentText.length) {
+                textElement.textContent += currentText.charAt(charIndex);
+                charIndex++;
+                setTimeout(typeWriter, typingSpeed);
+            } else {
+                setTimeout(eraseText, delayBetweenTexts);
+            }
+        }
+
+        function eraseText() {
+            const currentText = texts[textIndex];
+            
+            if (textElement.textContent.length > 0) {
+                textElement.textContent = currentText.substring(0, textElement.textContent.length - 1);
+                setTimeout(eraseText, typingSpeed / 2); 
+            } else {
+                textIndex = (textIndex + 1) % texts.length;
+                charIndex = 0;
+                
+                setTimeout(typeWriter, 500); 
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', typeWriter);
+
+
+        // KODE SCROLL ANIMATION (Intersection Observer)
+        const observerOptions = {
+            root: null, // viewport
+            rootMargin: '0px',
+            threshold: 0.1 // Pemicu saat 10% elemen terlihat
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    // Hanya berhenti mengamati jika elemen tersebut adalah kartu skill/portofolio atau elemen fade-in
+                    if (entry.target.classList.contains('skill-card') || entry.target.classList.contains('portofolio-card') || entry.target.classList.contains('fade-in') || entry.target.classList.contains('contact-link-item')) {
+                        observer.unobserve(entry.target);
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Amati semua elemen yang memiliki kelas 'fade-in'
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
+        
+        // Amati setiap kartu skill secara terpisah
+        document.querySelectorAll('.skill-card').forEach(element => {
+            observer.observe(element);
+        });
+        
+        // Amati setiap kartu portofolio secara terpisah (Tambahan baru)
+        document.querySelectorAll('.portofolio-card').forEach(element => {
+             observer.observe(element);
+        });
+        
+        // Amati setiap item kontak secara terpisah (Tambahan baru)
+        document.querySelectorAll('.contact-link-item').forEach(element => {
+            observer.observe(element);
+        });
+        
+        
+        // KODE UNTUK HIGHLIGHT NAVIGASI SAAT SCROLL (ACTIVE STATE)
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.navbar nav ul li a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 150) { 
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // --- KODE JAVASCRIPT UNTUK MODAL ---
+
+        const programmingModal = document.getElementById('programming-data-modal');
+        const engineeringModal = document.getElementById('engineering-control-modal');
+        const webDesignModal = document.getElementById('web-design-modal'); 
+
+        function openModal(skillName) {
+            let targetModal;
+
+            if (skillName === 'Programming and Data') {
+                targetModal = programmingModal;
+            } else if (skillName === 'Engineering and Control') {
+                targetModal = engineeringModal;
+            } else if (skillName === 'Web and Design') { 
+                targetModal = webDesignModal;
+            } else {
+                return; 
+            }
+            
+            if (targetModal) {
+                targetModal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeModal() {
+            programmingModal.style.display = 'none';
+            engineeringModal.style.display = 'none';
+            webDesignModal.style.display = 'none'; 
+            document.body.style.overflow = 'auto'; 
+        }
+
+        window.onclick = function(event) {
+            if (event.target == programmingModal || event.target == engineeringModal || event.target == webDesignModal) { 
+                closeModal();
+            }
+        }
+    </script>
+
+</body>
+</html>
